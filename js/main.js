@@ -2,16 +2,20 @@ const timer = document.querySelector("#timer")
 const itens = document.querySelectorAll(".radioOption")
 const play = document.querySelector("#btnjogar")
 
+//
+
+
 function modificabtn(interruptor){
-    if(!interruptor){
-        play.setAttribute("disabled", true)
-        play.style.opacity = "0"
-        play.style.cursor = "auto"
-    }else{
-        play.removeAttribute("disabled")
-        play.style.opacity = "1"
-        play.style.cursor = "pointer"
+    play.remove()
+
+    if(interruptor){
+        const btnreplay = document.querySelector("#espaco") 
+        btnreplay.innerHTML = "<button id='btnreplay' class='botoes'>Replay</button>"
+        btnreplay.addEventListener("click", ()=>{
+            window.location.reload()
+        })
     }
+
 }
 
 var tempo;

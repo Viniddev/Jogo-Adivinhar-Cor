@@ -11,7 +11,6 @@
     --largura: 200px;
     --abaulamento: 5px;
 }
-
 .cronometro{
     cursor:auto;
     transition: none;
@@ -20,8 +19,8 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    opacity: 0;
 }
-
 body{
     height: 100vh;
     width: 100vw;
@@ -88,20 +87,6 @@ h2{
     top: 92%;
     left: .8%;
 }
-#btnjogar{
-    height:70px;
-    width:200px;
-    background:var(--cor-fundo-play);
-    color:var(--cor-Principal);
-    clip-path:polygon(100% 0, 100% calc(100% - 45px), calc(100% - 45px) 100%, 0 100%, 0 0);;
-    border-radius:5px;
-    cursor:pointer;
-    opacity: 1;
-    font-weight:800;
-    font-size:.3em;
-    transition:all .5s;
-    border:none;
-}
 #menu, .opcao{
     margin-bottom: 25px;
 }
@@ -128,7 +113,21 @@ h2{
     height: 35px;
     border-radius: 5px;
 }
-.opcao:hover, #btnjogar:hover{
+.opcao:hover, .botoes:hover{
     filter: brightness(1.5);
     border: 2px solid var(--cor-Principal);
+}
+.botoes{
+    height:70px;
+    width:200px;
+    background:var(--cor-fundo-play);
+    color:var(--cor-Principal);
+    clip-path:polygon(100% 0, 100% calc(100% - 45px), calc(100% - 45px) 100%, 0 100%, 0 0);;
+    border-radius:5px;
+    cursor:pointer;
+    opacity: var(--opacidade);
+    font-weight:800;
+    font-size:.3em;
+    transition:all .5s;
+    border:none;
 }
