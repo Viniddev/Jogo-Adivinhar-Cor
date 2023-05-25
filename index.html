@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Projeto Game Color</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3162/3162558.png " type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/main.js" defer=""></script>
+    <script src="./js/cronometro.js" defer=""></script>
+    <script src="./js/coresRandomicas.js" defer=""></script>
+    <script src="./js/reconhecimentoVoz.js" defer=""></script>
+</head>
+<body id="body">
+    <header>
+        <h1 class="box" id="timer">Tempo</h1>
+        <h3 class="box" id="pontos">Pontuação</h3>
+    </header>
+    <aside>
+        <h3 id="menu">Opções: </h3>
+        <div class="opcao" id="vinteSeg">
+            <input type="radio" name="tempo" class="opc radioOption" id="numero1" value="20">
+            <label for="20seg" class="opc" >20seg</label>
+        </div>
+        <div class="opcao" id="quarentaSeg">
+            <input type="radio" name="tempo" class="opc radioOption" id="numero2" value="40">
+            <label for="40seg" class="opc">40seg</label>
+        </div>
+        <div class="opcao" id="sessentaSeg">
+            <input type="radio" name="tempo" class="opc radioOption" id="numero3" value="60">
+            <label for="60seg" class="opc">60seg</label>
+        </div>
+        <div class="opcao" id="ranking">
+            <h3>Ranking <i class="fa-solid fa-crown" style="color: #d4ff00;"></i></h3>
+        </div>
+    </aside>
+    <main>
+        <h2 id="cor">cor</h2>
+        <button id="btnjogar">Play</button>
+    </main>
+    <footer>
+        <a href="https://www.instagram.com/viniddev_/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a> <a href="https://www.linkedin.com/in/vin%C3%ADcius-dias-rodrigues-107602231/ " target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a> <a href="https://github.com/Viniddev " target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+    </footer>
+</body>
+</html>
